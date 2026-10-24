@@ -4,15 +4,27 @@
   "type": "mcp",
   "name": "Veqen",
   "tagline": "AI inference costs by customer, feature and model, reconciled to provider bills.",
-  "description": "Query AI spend, customer margin, invoice reconciliation and prepaid credits, compare model prices, and simulate workloads. Connect to the hosted Streamable HTTP server with OAuth, choose an organization, and use your existing role. Owners and admins can also create budgets with set_budget; other tools read data or calculate estimates. Access can be revoked in Settings > MCP apps. Observed-spend budgets can overshoot due to concurrent calls and reporting delays; calculated costs are not provider invoices. A separate public price-book endpoint at https://veqen-app.com/mcp/prices needs no account. Documentation: https://veqen-app.com/docs/mcp. Free dashboard plan includes 60,000 tracked calls per month; paid plans are optional. Signup: https://veqen-app.com/signup?utm_source=cline&utm_medium=directory&utm_campaign=launch-v1",
-  "author": { "name": "Keyveve", "url": "https://github.com/Keyveve" },
+  "description": "Veqen 1.5 tracks AI spend by customer, feature, model and agent run. Analyze savings, forecasts, customer margin, invoice reconciliation and prepaid credits; compare model prices and simulate workloads. Connect to the hosted Streamable HTTP server with OAuth, choose an organization, and use your existing role and plan. Authorized tools can modify budgets, credits, bills, prices and month-end records; review the values and confirm before writes. Revoke access in Settings > MCP apps. Observed-spend budgets can overshoot due to concurrent calls and reporting delays; calculated costs are not provider invoices. A separate public pricing endpoint at https://veqen-app.com/mcp/prices needs no account. Documentation: https://veqen-app.com/docs/mcp. Free dashboard plan includes 60,000 tracked calls per month; paid plans are optional. Signup: https://veqen-app.com/signup?utm_source=cline&utm_medium=directory&utm_campaign=launch-v1",
+  "author": {
+    "name": "Keyveve",
+    "url": "https://github.com/Keyveve"
+  },
   "homepage": "https://veqen-app.com/docs/mcp",
   "repo": "https://github.com/Keyveve/veqen-sdks",
-  "tags": ["finance", "data", "software"],
+  "tags": [
+    "finance",
+    "data",
+    "software"
+  ],
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["veqen", "--transport", "http", "https://veqen-app.com/mcp"],
+    "args": [
+      "veqen",
+      "--transport",
+      "http",
+      "https://veqen-app.com/mcp"
+    ],
     "notes": "Sign in, select your organization, and review consent. For public model prices only, connect to https://veqen-app.com/mcp/prices instead. Never put provider admin keys or personal data into prompts or tags."
   }
 }
